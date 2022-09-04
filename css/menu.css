@@ -1,0 +1,28 @@
+/* 底部菜单容器 */
+#menu{
+    height: 60px;
+    display: flex;
+    /* 内阴影 */
+    box-shadow: 0 1px 1px gainsboro inset;
+    /* 透明度 */
+    opacity: .8;
+}
+
+/* 菜单选项 */
+.menu-div{
+    width: 25%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+.menu-div img{
+    height: 23px;
+    width: 23px;
+    opacity: .7;
+}
+.font-menu{
+    margin-top: 4px;
+    font-weight: 200;
+    font-size: 90%;
+}

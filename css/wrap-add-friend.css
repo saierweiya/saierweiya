@@ -1,0 +1,92 @@
+#wrap-add-friend{
+    height: 100%;
+    /* 占用剩余布局 */
+    flex-grow: 1;
+    /* 裁剪剩余部分，滚动显示 */
+    overflow-y: scroll;
+    background: gainsboro;
+    display: none;
+}
+.letter{
+    width: 4px;
+    height: 16px;
+    color:gray;
+    font-size: 12px;
+    padding:0 auto;
+
+}
+
+.letter-img{
+    width: 4px;
+    height: 20px;
+}
+.letter-img img{
+    width: 4px;
+    height: 20px;
+    padding:0 auto;
+}
+
+.letter-list{
+    width: 10px;
+    height: 390px;
+    /* background-color: whitesmoke; */
+    position: fixed;
+    right: 10px;
+     top: 100px;
+}
+
+
+.friend-list{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    width: 100%;
+    margin: 0 auto;
+    /* margin-top: 15px; */
+}
+
+
+
+
+.friend-content{
+    height: 54px;
+    background: white;
+    border-bottom: 1px gainsboro solid;
+    padding: 0 8px 0 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.friend-content-left img{
+    /* 修改图片大小 */
+    height: 38px;
+    width: 38px;
+    /* 提供圆角 */
+    border-radius: 6px;
+}
+
+.friend-content-right{
+    height: 20px;
+    flex-grow:1;
+    padding-left: 20px;
+}
+/* 添加的朋友名字 */
+.friend-username{
+    width: 100%;
+    height: 20px;
+    font-size: 14px;
+    /* 颜色黑色 */
+    color:#000;
+}
+/* 间隔空白区域 */
+.blank{
+    height: 30px;
+    /* background: white; */
+    font-size: 10px;
+    border-bottom: 1px gainsboro solid;
+    padding: 6px 0 0 8px;
+    /* justify-content: space-between; */
+    align-items: center;
+}

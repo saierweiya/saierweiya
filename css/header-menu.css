@@ -1,0 +1,49 @@
+/* 弹出菜单容器 */
+#popup-menu{
+    height: 190px;
+    width: 140px;
+    background: #424242;
+    /* 设置容器绝对定位 */
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    /* around中间和两边有留白 */
+    justify-content: space-around;
+    align-items: center;
+    /* 与顶部的距离 */
+    top: 75px;
+    right: 4px;
+}
+
+#small-triangle-up{
+    /* 相对定位 */
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #424242;
+    top :-10px;
+    right :-54px;
+
+}
+
+/* 菜单内容 */
+.popup-menu-content{
+    width: 90%;
+    border-bottom: 1px solid #616161;
+    display: flex;
+    padding :6px 0 6px 0;
+}
+/* 最后元素去掉下边框 */
+.popup-menu-content:last-child{
+    border-bottom: none;
+}
+.popup-menu-content div{
+    padding: 0 10px 0 10px;
+}
+.popup-menu-content-icon img{
+    height: 22px;
+    width: 22px;
+}
